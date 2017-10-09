@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { WebsocketService } from './shared/index';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +10,14 @@ import { Component } from '@angular/core';
     </p>
     <router-outlet></router-outlet>
   `,
-  styles: []
+  styles: [],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'app';
+
+  constructor(private websocketService: WebsocketService) {}
+
+  ngOnInit(): void {
+    // this.websocketService.sendSubscribe({});
+  }
 }

@@ -15,5 +15,6 @@ import * as shared from './';
     shared.MeterVerticalComponent,
     shared.MeterHorizontalComponent,
   ],
+  providers: [shared.WebsocketService],
 })
 export class SharedModule {}
