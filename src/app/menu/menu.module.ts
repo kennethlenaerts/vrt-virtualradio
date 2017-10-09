@@ -1,10 +1,18 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+
+import * as menu from './';
 
 @NgModule({
-  imports: [
-    CommonModule
+  imports: [CommonModule],
+  declarations: [
+    menu.HamburgerComponent,
+    menu.MenuComponent,
+    menu.TileListComponent,
+    menu.TileComponent,
+    menu.PlayerListComponent,
+    menu.PlayerComponent,
+    menu.ClockComponent,
   ],
-  declarations: []
 })
-export class MenuModule { }
+export class MenuModule {}
