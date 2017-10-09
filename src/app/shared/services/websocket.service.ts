@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
 export class WebsocketService {
   exampleSocket: WebSocket;
   title = 'app';
-  url = 'ws://10.211.55.3:9002';
-  subscriptions = [];
+  url = 'ws://10.211.55.3:9002'; // insert correct vm url.
+  subscriptions = ['audio.input.router.sources'];
 
   constructor() {
     this.exampleSocket = new WebSocket(this.url);
