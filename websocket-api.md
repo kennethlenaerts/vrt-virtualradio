@@ -114,9 +114,6 @@ Y stands for:
 the index of equaliser band: 0 to 3
 ### Logic properties
 | Key                              | Type          | Description                                                             |
-
 | ---------------------------------|---------------|-------------------------------------------------------------------------|
-
 | logic.mixer.micLive              | Number        | Any mic channel is opened: 0 or 1                                       |
-
 | logic.mixer.cue                  | Number        | Any channel is cued: 0 or 1                                             |
